@@ -8,6 +8,7 @@ public class Tic_Tac_Toe {
 	static char player, computer;
 	static Scanner sc = new Scanner(System.in);
 
+	// Main method for Calling the User Methods
 	public static void main(String[] args) {
 		System.out.println("Welcome to Tic Tac Toe Game");
 		CreateBorad();
@@ -15,12 +16,14 @@ public class Tic_Tac_Toe {
 		showBoard();
 	}
 
+	// Create empty Board using array length unto 10
 	static void CreateBorad() {
 		for (index = 1; index < board.length; index++) {
 			board[index] = ' ';
 		}
 	}
 
+	// Select Option from X and O and print it
 	static void selectOption() {
 		while (true) {
 			System.out.println("Select the option (X,x) or (O,o)");
@@ -37,6 +40,7 @@ public class Tic_Tac_Toe {
 		}
 	}
 
+	// Create a Current Board with the Matrix of 3x3
 	static void showBoard() {
 		for (index = 1; index < board.length; index = index + 3) {
 			System.out.println("[" + board[index] + "|" + board[index + 1] + "|" + board[index + 2] + "]");
