@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 public class Tic_Tac_Toe {
 	static char[] board = new char[10];
-	static char player ;
+	static char player , Computer;
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Tic Tac Toe Game");
 		EmptyBorad();
 		player = selectoption();
-		System.out.println("Selected option by player is "+player);
+		Computer = player == 'X' ? 'O' : 'X';
+		System.out.println(player + " is player " + Computer + " is computer");
 	}
 
 	static void EmptyBorad() {
