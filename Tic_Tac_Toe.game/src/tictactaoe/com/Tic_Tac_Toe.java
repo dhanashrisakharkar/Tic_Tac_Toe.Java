@@ -10,8 +10,8 @@ public class Tic_Tac_Toe {
 
 	}
 
-	    static void EmptyBorad() {
-		for (int a = 1; a < 10; a++) {
+	static void EmptyBorad() {
+		for (int a = 1; a < board.length ; a++) {
 			board[a] = ' ';
 		}
 
