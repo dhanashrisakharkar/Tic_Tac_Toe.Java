@@ -11,9 +11,7 @@ public class Tic_Tac_Toe {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Tic Tac Toe Game");
 		CreateBorad();
-		player = selectOption();
-		computer = player == 'X' ? 'O' : 'X';
-		System.out.println(player + " is player " + computer + " is computer");
+		selectOption();
 		showBoard();
 	}
 
@@ -23,12 +21,14 @@ public class Tic_Tac_Toe {
 		}
 	}
 
-	static char selectOption() {
+	static void selectOption() {
 		while (true) {
 			System.out.println("Select the option X or O");
 			player = sc.next().charAt(0);
 			if (player == 'X' || player == 'O') {
-				return player;
+				computer = player == 'X' ? 'O' : 'X';
+				System.out.println(player + " is player " + computer + " is computer");
+				break;
 			} else {
 				System.out.println("invalid choice enter again");
 				System.out.println("---------");
