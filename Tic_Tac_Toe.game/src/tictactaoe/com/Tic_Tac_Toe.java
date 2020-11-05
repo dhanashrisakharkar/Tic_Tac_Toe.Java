@@ -23,9 +23,9 @@ public class Tic_Tac_Toe {
 
 	static void selectOption() {
 		while (true) {
-			System.out.println("Select the option X or O");
+			System.out.println("Select the option (X,x) or (O,o)");
 			player = sc.next().charAt(0);
-			if (player == 'X' || player == 'O') {
+			if ((player == 'X' || player == 'x') || (player == 'O' || player == 'o')) {
 				computer = player == 'X' ? 'O' : 'X';
 				System.out.println(player + " is player " + computer + " is computer");
 				break;
