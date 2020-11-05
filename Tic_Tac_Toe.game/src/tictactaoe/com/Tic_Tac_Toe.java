@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Tic_Tac_Toe {
 	static char[] board = new char[10];
-	static char player , Computer;
+	static char player, Computer;
 	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
@@ -16,9 +16,9 @@ public class Tic_Tac_Toe {
 	}
 
 	static void EmptyBorad() {
-		for (int a = 1; a < board.length; a++) {
-			board[a] = ' ';
-			
+		for (int index = 1; index < board.length; index++) {
+			board[index] = ' ';
+
 		}
 
 	}
